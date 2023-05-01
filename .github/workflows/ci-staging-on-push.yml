@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Setup Node ENV
-        uses: actions/setup-node@main
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           check-latest: true
