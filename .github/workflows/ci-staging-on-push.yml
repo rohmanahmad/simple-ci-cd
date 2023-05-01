@@ -11,14 +11,18 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@master-stage-1
+
       - name: Setup Node ENV
         uses: actions/setup-node@v2.1.5
         with:
           node-version: 14
           check-latest: true
+
       - name: Install Dependencies
         run: yarn
+
       - name: Run Linter
         run: yarn lint
+        
       - name: Run Test App
         run: yarn test
