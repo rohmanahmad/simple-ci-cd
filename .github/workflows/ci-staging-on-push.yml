@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Branch
-        uses: actions/checkout@master-stage-1
+        uses: actions/checkout@v3.5.2
 
       - name: Setup Node ENV
         uses: actions/setup-node@v2.1.5
@@ -23,6 +23,6 @@ jobs:
 
       - name: Run Linter
         run: yarn lint
-        
+
       - name: Run Test App
         run: yarn test
