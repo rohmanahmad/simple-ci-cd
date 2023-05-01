@@ -1,9 +1,9 @@
-name: staging-on-push
+name: master-on-push
 
 on:
   push:
     branches:
-      - master-stage-1
+      - main
 
 jobs:
   pre-deployment:
