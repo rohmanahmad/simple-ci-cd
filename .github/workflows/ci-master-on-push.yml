@@ -1,0 +1,28 @@
+name: master-on-push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pre-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@main
+
+      - name: Setup Node ENV
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          check-latest: true
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Run Linter
+        run: yarn lint
+
+      - name: Run Test App
+        run: yarn test
