@@ -1,0 +1,27 @@
+{
+  "name": "simple-ci-cd",
+  "version": "1.0.0",
+  "description": "simple ci cd",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohmanahmad/simple-ci-cd.git"
+  },
+  "keywords": [
+    "ci",
+    "cd"
+  ],
+  "author": "rohmanahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohmanahmad/simple-ci-cd/issues"
+  },
+  "homepage": "https://github.com/rohmanahmad/simple-ci-cd#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
